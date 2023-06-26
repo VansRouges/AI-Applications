@@ -2,7 +2,7 @@ const setupTextarea = document.getElementById('setup-textarea')
 const setupInputContainer = document.getElementById('setup-input-container')
 const movieBossText = document.getElementById('movie-boss-text')
 
-const apiKey = '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'
+let apiKey;
 const url = 'https://api.openai.com/v1/completions'
 
 
@@ -30,11 +30,6 @@ function fetchBotReply(){
         movieBossText.innerText = data.choices[0].text
       )
 }
-
-// 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
-// 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
-
-// const apiKey = "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"
 
 // const url = "https://api.openai.com/v1/completions" 
 
