@@ -62,6 +62,7 @@ async function fetchSynopsis(outline) {
   fetchStars(synopsis)
 }
 
+<<<<<<< HEAD
 async function fetchTitle(synopsis) {
   const response = await openai.createCompletion({
     model: 'text-davinci-003',
@@ -128,3 +129,18 @@ async function fetchImageUrl(imagePrompt){
     movieBossText.innerText = `This idea is so good I'm jealous! It's gonna make you rich for sure! Remember, I want 10% 💰`
   })
 }
+=======
+// const url = "https://api.openai.com/v1/completions" 
+
+// fetch(url, {
+//     method: 'POST',
+//     headers: {
+//         'Content-Type': 'application/json',
+//         'Authorization': `Bearer ${apiKey}`
+//     },
+//     body: JSON.stringify({
+//         'model': 'text-davinci-003',
+//         'prompt': 'What is the capital of Spain?'
+//     })
+// }).then(response => response.json()).then(data => console.log(data))
+>>>>>>> 83a1cdbe83d134c0974621e4ada56fb4dbf60e5b
